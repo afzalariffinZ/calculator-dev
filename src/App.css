@@ -1,0 +1,112 @@
+.kotak{
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: calc(100vw - 100px);
+  height: calc(100vh - 100px); */
+  width:100vw;
+  height:100vh;
+  overflow:auto; 
+}
+
+.kotakCalculator{
+  border: 2px grey solid;
+  padding:20px;
+  background-color: rgb(209, 209, 209);
+}
+
+.kotakReal{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  height:auto;
+  width:10%;
+}
+
+.display{
+  background-color: white;
+  margin: 20px 0px;
+  border: 3px solid rgb(0, 0, 0);
+  padding-top:20px;
+  padding-left:20px;
+  width: calc(100% - 20px); /* Adjusting width for padding */
+  box-sizing: border-box;
+  height: 60px; /* Fixed height */
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-overflow: ellipsis;
+}
+
+.numberBox{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border:3px solid black;
+  background-color: grey;
+  height:50px;
+  width:50px;
+  font-size: 1.5em;
+}
+
+.numberBoxClicked{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border:3px solid black;
+  background-color: rgb(30, 29, 29);
+  height:50px;
+  width:50px;
+  font-size: 1.5em;
+}
+
+
+.item-inside{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:10px
+}
+
+.function{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;
+
+  gap:10px;
+  
+}
+
+.above{
+  display:flex;
+  margin-bottom:20px;
+  gap:5px;
+}
+
+#above1 .numberBox{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border:3px solid black;
+  background-color: grey;
+  height:30px;
+  width:40px;
+  font-size: 1.5em;
+}
+
+.advfunction{
+  display: flex;
+  flex-direction: column; /* Stack the "above" divs vertically */
+  align-items: center;
+  
+}
+
+#big{
+  font-size:15px;
+}
+
+#big.nigerian{
+  font-size:10px;
+}
